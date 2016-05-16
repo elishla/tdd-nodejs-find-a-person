@@ -27,7 +27,7 @@ describe('find if persons location', function() {
 
   it('Given a person name, return true if he has a location else return false', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-    var posts = map.find_a_person("Or A.")
+    var posts = map.find_if_persons_location("Or A.")
     Map(posts);
     expect(posts).to.be.eql(["true"]);
   });
