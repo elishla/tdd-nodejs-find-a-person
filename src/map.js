@@ -6,10 +6,15 @@ function Map(posts) {
 Map.prototype.find_a_person = function(name) {
 
       var arrayPosts =[];
-      for (var index = 0; this._posts.length < len; index++) {
+     var j=0;
+      for (var index = 0; index < this._posts.length; index++) {
 
-          if(this._posts[index].indexOf(name)!=-1)
-             arrayPosts.push(this._posts[index]);
+          if(this._posts[index].indexOf(name)!=-1){
+
+              arrayPosts[j]=this._posts[index];
+              j++;
+          }
+
       }
   return arrayPosts;
   };
